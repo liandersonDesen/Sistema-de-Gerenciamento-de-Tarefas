@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "Titulo": "Estudar JavaScript",
+    "Descricao": "Revisar conceitos de funções, arrays e objetos.",
+    "concluida": false
+  },
+  {
+    "id": 2,
+    "Titulo": "Fazer compras",
+    "Descricao": "Comprar frutas, vegetais e laticínios.",
+    "concluida": false
+  },
+  {
+    "id": 3,
+    "Titulo": "Ler um livro",
+    "Descricao": "Ler pelo menos 30 páginas do livro 'O Alquimista'.",
+    "concluida": true
+  },
+  {
+    "id": 4,
+    "Titulo": "Exercitar-se",
+    "Descricao": "Fazer uma caminhada de 30 minutos.",
+    "concluida": true
+  }
+]

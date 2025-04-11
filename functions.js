@@ -61,8 +61,15 @@ function centralizarTexto(texto) {
 }
 
 
-export async function print(){
-    let tarefas=await lerArquivoJSON();
+export async function print(opcao){
+    let tarefas;
+    if(opcao==1){
+        tarefas=await lerArquivoJSON();
+    }else if(opcao==2){
+        tarefas= await filtrar(true);
+    }else if(opcao==3){
+        tarefas= await filtrar(false);    
+    }
     let message="";
     for(let tarefa of tarefas){
         let head=`Tarefa ${tarefa.id}-${tarefa.concluida == true ? "concluída":"Não concluida"}`;

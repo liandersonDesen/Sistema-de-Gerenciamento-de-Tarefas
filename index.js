@@ -28,19 +28,19 @@ switch(opcao){
     break;
     case 2:
         console.clear();
-        console.log(await print());
+        console.log(await print(1));
         prompt("Pressione Enter:");
         console.clear();
     break;
     case 3:
         console.clear();
-        console.log(await filtrar(true));
+        console.log(await print(2));
         prompt("Pressione Enter:");
         console.clear();
     break;
     case 4:    
         console.clear();
-        console.log(await filtrar(false));
+        console.log(await print(3));
         prompt("Pressione Enter:");
         console.clear();
     break;

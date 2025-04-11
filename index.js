@@ -1,7 +1,7 @@
 // importar o modulo prompt-sync
 import PromptSync from 'prompt-sync';
 const prompt = PromptSync();
-import { adicionarTarefas,procurarId,modificar,filtrar,print } from './functions.js'
+import { adicionarTarefas,procurarId,modificar,filtrar,print, idTituloFalses } from './functions.js'
 let opcao;
 do{
     console.log(`Menu de operações:\n 1- Criar uma nova tarefa\n 2- Visualizar todas as tarefas \n 3- Visualizar apenas tarefas concluídas  \n 4- Visualizar apenas tarefas não concluídas \n 5- Concluir uma tarefa \n 6- Sair`);
@@ -48,8 +48,8 @@ switch(opcao){
         console.clear()
         let falses=await filtrar(false);
         let TodosIds = falses.map(objeto=>objeto.id)
-        console.log("os ids que estão com as tarefas não concluida são:")
-        console.log(TodosIds);
+        console.log("os ids que estão com as tarefas não concluida são:\n");
+        console.log(await idTituloFalses());
         const id=+prompt('Digite o id da Tarefa que deseja concluir:');
         const propriedade='concluida';
         const valor=true;

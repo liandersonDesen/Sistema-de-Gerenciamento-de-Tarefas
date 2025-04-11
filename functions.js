@@ -85,3 +85,14 @@ export async function print(opcao){
     }
     return message;
 }
+
+export async function idTituloFalses() {
+    let tarefas= await filtrar(false);
+    let message="";
+    for(let tarefa of tarefas){
+        let messageTafera=`id ${tarefa.id}:${tarefa.Titulo}
+`;
+        message=message+messageTafera;
+    }
+    return message;
+}

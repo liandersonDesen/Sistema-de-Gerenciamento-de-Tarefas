@@ -37,5 +37,4 @@ O desenvolvimento deste projeto foi realizado por:
 
 ## Imagens
 
-<img scr="https://github.com/liandersonDesen/Sistema-de-Gerenciamento-de-Tarefas/src/Menu.png"  width="750" height="200">
-
+![image](https://liandersondesen.github.io/Sistema-de-Gerenciamento-de-Tarefas/src/Menu.png)
